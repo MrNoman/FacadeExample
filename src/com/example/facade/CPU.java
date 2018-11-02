@@ -11,12 +11,6 @@ public class CPU {
         return poweredON;
     }
 
-
-    public void setPoweredOn(boolean poweredOn) {
-        this.poweredON = poweredOn;
-        System.out.println("CPU ON");
-    }
-
     public void setPoweredOn(Computer computer) {
         if (computer.getPower().isPoweredOn()) {
             this.poweredON = true;

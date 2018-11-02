@@ -7,10 +7,6 @@ public class PowerSupply {
         this.poweredOn = false;
     }
 
-    public PowerSupply(boolean power){
-        this.poweredOn = power;
-    }
-
     public boolean isPoweredOn() {
         return poweredOn;
     }

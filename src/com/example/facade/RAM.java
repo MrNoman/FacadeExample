@@ -11,12 +11,6 @@ public class RAM {
         return poweredON;
     }
 
-
-    public void setPoweredOn(boolean poweredOn) {
-        this.poweredON = poweredOn;
-        System.out.println("RAM ON");
-    }
-
     public void setPoweredOn(Computer computer) {
         if (computer.getCpu().isPoweredOn()) {
             this.poweredON = true;

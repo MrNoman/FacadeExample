@@ -7,16 +7,6 @@ public class PlugInDevices {
         this.poweredON = false;
     }
 
-    public boolean isPoweredOn() {
-        return poweredON;
-    }
-
-
-    public void setPoweredOn(boolean poweredOn) {
-        this.poweredON = poweredOn;
-        System.out.println("Plug-in devices ON");
-    }
-
     public void setPoweredOn(Computer computer) {
         if (computer.getHdd().isPoweredOn()) {
             this.poweredON = true;
