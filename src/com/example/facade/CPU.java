@@ -18,7 +18,7 @@ public class CPU {
     }
 
     public void setPoweredOn(Computer computer) {
-        if (computer.power.isPoweredOn()) {
+        if (computer.getPower().isPoweredOn()) {
             this.poweredON = true;
             System.out.println("CPU ON");}
             else

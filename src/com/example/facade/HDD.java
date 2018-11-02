@@ -18,7 +18,7 @@ public class HDD {
     }
 
     public void setPoweredOn(Computer computer) {
-        if (computer.ram.isPoweredOn()) {
+        if (computer.getRam().isPoweredOn()) {
             this.poweredON = true;
             System.out.println("HDD ON");}
         else

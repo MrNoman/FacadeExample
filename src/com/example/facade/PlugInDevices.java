@@ -18,13 +18,13 @@ public class PlugInDevices {
     }
 
     public void setPoweredOn(Computer computer) {
-        if (computer.hdd.isPoweredOn()) {
+        if (computer.getHdd().isPoweredOn()) {
             this.poweredON = true;
             System.out.println("Plug-in devices ON");}
         else
         {
             this.poweredON = false;
-            System.out.println("HDD OFF -> Plug-in devices");
+            System.out.println("HDD OFF -> Plug-in devices OFF");
         }
 
     }

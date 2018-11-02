@@ -1,20 +1,24 @@
 package com.example.facade;
 
 public class ComputerFacade {
-    public void turnOnComputer(Computer computer){
-        computer.power.setPoweredOn(true);
-        computer.cpu.setPoweredOn (computer);
-        computer.ram.setPoweredOn(computer);
-        computer.hdd.setPoweredOn(computer);
-        computer.plugInDevices.setPoweredOn(computer);
+
+    private Computer computer = new Computer();
+
+
+    public void turnOnComputer(){
+        computer.getPower().setPoweredOn(true);
+        computer.getCpu().setPoweredOn (computer);
+        computer.getRam().setPoweredOn(computer);
+        computer.getHdd().setPoweredOn(computer);
+        computer.getPlugInDevices().setPoweredOn(computer);
 
     }
 
-    public void turnOffComputer(Computer computer){
-        computer.power.setPoweredOn(false);
-        computer.cpu.setPoweredOn (computer);
-        computer.ram.setPoweredOn(computer);
-        computer.hdd.setPoweredOn(computer);
-        computer.plugInDevices.setPoweredOn(computer);
+    public void turnOffComputer(){
+        computer.getPower().setPoweredOn(false);
+        computer.getCpu().setPoweredOn (computer);
+        computer.getRam().setPoweredOn(computer);
+        computer.getHdd().setPoweredOn(computer);
+        computer.getPlugInDevices().setPoweredOn(computer);
     }
 }

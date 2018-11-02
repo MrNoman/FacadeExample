@@ -18,7 +18,7 @@ public class RAM {
     }
 
     public void setPoweredOn(Computer computer) {
-        if (computer.cpu.isPoweredOn()) {
+        if (computer.getCpu().isPoweredOn()) {
             this.poweredON = true;
             System.out.println("RAM ON");}
         else
